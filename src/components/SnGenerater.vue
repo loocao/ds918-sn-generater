@@ -102,6 +102,6 @@ function calcMac(mac, AAA, BB) {
   const newMacLastSix = (1000 * BB + AAA) * 2 + diff
   // 将mac转换为16进制
   const macHex = newMacLastSix.toString(16)
-  return = ('001132' + macHex).toUpperCase()
+  return ('001132' + macHex).toUpperCase()
 }
 </script>
