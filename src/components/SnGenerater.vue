@@ -85,7 +85,6 @@ function genSn() {
 
   // 计算MAC
   const newMac = calcMac(mac, AAA, BB)
-  formState.newMac = ('001132' + newMac).toUpperCase()
   console.log('newMac=' + formState.newMac)
 }
 
@@ -103,6 +102,6 @@ function calcMac(mac, AAA, BB) {
   const newMacLastSix = (1000 * BB + AAA) * 2 + diff
   // 将mac转换为16进制
   const macHex = newMacLastSix.toString(16)
-  return macHex
+  return = ('001132' + macHex).toUpperCase()
 }
 </script>
